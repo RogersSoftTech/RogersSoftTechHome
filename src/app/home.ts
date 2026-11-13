@@ -19,13 +19,13 @@ export class Home {
   protected readonly projects: readonly Project[] = [
     {
       name: 'Mass Lottery',
-      description: 'Explore the Mass Lottery application.',
+      description: 'Built with Dart.',
       url: 'https://mass-lottery.rogers-soft-tech.com/',
       label: 'mass-lottery.rogers-soft-tech.com',
     },
     {
       name: 'Engineering Atlas',
-      description: 'Explore the Engineering Atlas application.',
+      description: 'Built with TypeScript and C#.',
       url: 'https://engineering-atlas.rogers-soft-tech.com/',
       label: 'engineering-atlas.rogers-soft-tech.com',
     },

@@ -20,6 +20,17 @@ describe('home page', () => {
     ]);
   });
 
+  it('displays the programming languages for each project', async () => {
+    const harness = await RouterTestingHarness.create();
+    await harness.navigateByUrl('/home', Home);
+    const cards = Array.from(harness.routeNativeElement!.querySelectorAll<HTMLElement>('.project-card'));
+
+    expect(cards.map((card) => card.querySelector('.card-content p')?.textContent?.trim())).toEqual([
+      'Built with Dart.',
+      'Built with TypeScript and C#.',
+    ]);
+  });
+
   it('redirects the root URL to /home', async () => {
     const harness = await RouterTestingHarness.create();
     await harness.navigateByUrl('/', Home);
