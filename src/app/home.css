@@ -200,6 +200,13 @@ h3 {
   line-height: 1.6;
 }
 
+.card-content .project-languages {
+  margin: 8px 0 0;
+  color: #526f89;
+  font-size: 14px;
+  letter-spacing: normal;
+}
+
 .project-url {
   overflow-wrap: anywhere;
   color: #1667a3;

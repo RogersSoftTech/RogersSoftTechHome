@@ -25,9 +25,12 @@ describe('home page', () => {
     await harness.navigateByUrl('/home', Home);
     const cards = Array.from(harness.routeNativeElement!.querySelectorAll<HTMLElement>('.project-card'));
 
-    expect(cards.map((card) => card.querySelector('.card-content p')?.textContent?.trim())).toEqual([
-      'Built with Dart.',
-      'Built with TypeScript and C#.',
+    expect(cards.map((card) => [
+      card.querySelector('.card-content p')?.textContent?.trim(),
+      card.querySelector('h3.project-languages')?.textContent?.trim(),
+    ])).toEqual([
+      ['A Massachusetts Lottery Random Number Generator', 'Built with Dart'],
+      ['A Learning Hub for Advanced Software Engineering Skills', 'Built with TypeScript and C#'],
     ]);
   });
 

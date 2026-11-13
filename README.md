@@ -28,7 +28,7 @@ in the browser bundle and is therefore visible to site visitors.
 ## Add a project
 
 Add an entry to the `projects` array in `src/app/home.ts`, including its name,
-description, public URL, and display label. Projects can be independent static
+description, languages, public URL, and display label. Projects can be independent static
 sites or applications hosted on any origin; the homepage links to them rather
 than deploying or embedding them.
 
