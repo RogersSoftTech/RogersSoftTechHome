@@ -29,7 +29,7 @@ describe('home page', () => {
       card.querySelector('.card-content p')?.textContent?.trim(),
       card.querySelector('h3.project-languages')?.textContent?.trim(),
     ])).toEqual([
-      ['A Massachusetts Lottery Random Number Generator', 'Built with Dart'],
+      ['A Massachusetts Lottery Random Number Generator', 'Built with Python and Flask'],
       ['A Learning Hub for Advanced Software Engineering Skills', 'Built with TypeScript and C#'],
     ]);
   });

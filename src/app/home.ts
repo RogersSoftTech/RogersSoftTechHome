@@ -21,7 +21,7 @@ export class Home {
     {
       name: 'Mass Lottery',
       description: 'A Massachusetts Lottery Random Number Generator',
-      languages: 'Built with Dart',
+      languages: 'Built with Python and Flask',
       url: 'https://mass-lottery.rogers-soft-tech.com/',
       label: 'mass-lottery.rogers-soft-tech.com',
     },
